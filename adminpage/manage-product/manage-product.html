@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Account</title>
+    <link rel="stylesheet" href="./manage-product.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Public Sans:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+    />
+    
+    <script
+      src="https://kit.fontawesome.com/7b988689d5.js"
+      crossorigin="anonymous"
+      defer=""
+    ></script>
+  </head>
+  <body>
+    <!--------------------header----------------------------------->
+    <header>
+      <div class="logo">
+        <img
+          itemprop="logo"
+          src="//theme.hstatic.net/1000288298/1001020793/14/logo.png?v=484"
+          alt="TTGShop - Phụ kiện Game Thủ |Tư vấn Build PC| giá rẻ - www.ttgshop.vn"
+          class="img-responsive logoimg ls-is-cached lazyloaded"
+        />
+        <h3>Chào mừng đến trang admin</h3>
+      </div>
+
+      <div class="admin">
+        <h4 class="admin-name">Ngọc Sora</h4>
+        <span class="admin-container">
+          <img
+            class="admin-img"
+            src="https://avatars.githubusercontent.com/u/165108084?v=4"
+            alt=""
+          />
+            <div class="admin-menu" id="adminMenu">
+            <a class="log-out" href="../../login/login.html"
+              >Logout</a
+            >
+          </div>
+        </span>
+      </div>
+    </header>
+
+    <!-- /* ---------------------------Sidebar-------------------- */ -->
+
+    <aside>
+      <div class="sidebar">
+        <a href="../admin.html" class="manage manage-general">Dashboard</a>
+        <a
+          href="../manage-account/manage-account.html"
+          class="manage manage-account"
+          >Quản lý tài khoản</a
+        >
+        <a
+          href="../manage-category/manage-category.html"
+          class="manage manage-list"
+          >Quản lý danh mục</a
+        >
+        <a
+          href="../manage-product/manage-product.html "
+          class="manage manage-product"
+          >Quản lý sản phẩm</a
+        >
+        <a href="manage-order.html" class="manage manage-order"
+          >Quản lý đơn hàng</a
+        >
+      </div>
+    </aside>
+    <!-- -----------------phần quản lý user-------------- -->
+    <div class="manage-account-container">
+      <span class="sort-function"
+        ><p>Sắp xếp sản phẩm theo:</p>
+        <select name="sortoption" id="sortOption">
+          <option value="az">Tên A-Z</option>
+          <option value="za">Tên Z-A</option>
+          <option value="pricedown">Giá thấp - cao</option>
+          <option value="priceup">Giá cao - thấp</option>
+          <option value="category">Category</option>
+          <option value="status">Tình trạng</option>
+        </select></span
+      >
+      <span class="add-product">
+        <p>Thêm sản phẩm:</p>
+        <button class="button-17" id="addBtn">Thêm</button>
+      </span>
+      <h1>DANH SÁCH SẢN PHẨM</h1>
+      <div class="search-bar-container">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Tìm kiếm sản phẩm..."
+        />
+        <button id="searchButton">Tìm kiếm</button>
+      </div>
+    </div>
+    <div id="table" class="table-body">
+      <table class="table table-inner">
+        <thead class="table-thead">
+          <tr class="table-tr">
+            <th class="table-th" width="10%">STT</th>
+            <th class="table-th">Mã sản phẩm</th>
+            <th class="table-th">Tên sản phẩm</th>
+            <th class="table-th">Hình ảnh</th>
+            <th class="table-th">Số lượng</th>
+            <th class="table-th">Giá tiền</th>
+            <th class="table-th">Danh mục</th>
+            <th class="table-th">Tình trạng</th>
+            <th class="table-th">Action</th>
+          </tr>
+        </thead>
+
+        <tbody id="categoryBody"></tbody>
+      </table>
+    </div>
+    <div class="pagination-container">
+      <button class="prev-page" disabled>Previous</button>
+      <span class="current-page">Page 1</span>
+      <button class="next-page">Next</button>
+    </div>
+    <!-- Update Product Form -->
+    <div id="updateProductForm">
+      <label for="productname">Product name:</label><br />
+      <input type="text" id="productname" name="productname" /><br />
+      <label for="image">Product image link:</label><br />
+      <input type="text" id="imagelink" name="imagelink" /><br />
+      <label for="quantity">Quantity:</label><br />
+      <input type="text" id="quantity" name="quantity" /><br />
+      <label for="price">Price:</label><br />
+      <input type="text" id="price" name="price" /><br />
+      <label for="category">Category:</label><br />
+      <input type="text" id="category" name="category" /><br />
+      <label for="status">Status:</label><br />
+      <input type="text" id="status" name="status" /><br />
+      <input type="button" value="Submit" id="submitUpdate" />
+      <input type="button" value="Cancel" id="cancelUpdate" />
+    </div>
+
+    <script src="./manage-product.js"></script>
+  </body>
+</html>
