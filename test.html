@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>const characters = [
+  { name: 'Batman', team: 'Justice League' },
+  { name: 'Hulk', team: 'Avengers' },
+  { name: 'Flash', team: 'Justice League' },
+  { name: 'Iron Man', team: 'Avengers' },
+  { name: 'Deadpool', team: 'X-Force' }
+];
+
+const heronumber = [
+  {
+    team: 'Justice League',
+    number: function () {
+      const heroesInTeam = characters.filter(character => character.team === this.team);
+      return heroesInTeam.length;
+    }
+  },
+  {
+    team: 'Avengers',
+    number: function () {
+      const heroesInTeam = characters.filter(character => character.team === this.team);
+      return heroesInTeam.length;
+    }
+  },
+  {
+    team: 'X-Force',
+    number: function () {
+      const heroesInTeam = characters.filter(character => character.team === this.team);
+      return heroesInTeam.length;
+    }
+  }
+];
+
+// Now let's compute the numbers:
+heronumber.map(hero => ({ ...hero, number: hero.number() }));
+
+console.log(heronumber);
+// Result: [{ team: 'Justice League', number: 2 }, { team: 'Avengers', number: 2 }, { team: 'X-Force', number: 1 }]
+</script>
+</body>
+</html>

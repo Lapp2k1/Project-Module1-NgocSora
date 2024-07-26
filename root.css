@@ -5167,8 +5167,10 @@ img.lazyload:not([src]) {
   top: 100%; }
 
 @media (max-width: 991px) {
-  .sidebar-menu--colum {
-    display: none; } }
+  .sidebar-menu--colum, .box-text {
+    display: none!important; } 
+ 
+  }
 
 .sidebar-menu.show-menu .site-overlay, .sidebar-menu.active-menu .site-overlay {
   position: fixed;
