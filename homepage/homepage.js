@@ -37,7 +37,7 @@ let userData = [
     email: "vulengocvip2015@gmail.com",
     permission: "admin",
     order: [],
-    wishList: [],
+    cart: [],
     status: "inactive",
   },
   {
@@ -48,7 +48,7 @@ let userData = [
     email: "vulengocvip201@gmail.com",
     permission: "user",
     order: [],
-    wishList: [],
+    cart: [],
     status: "inactive",
   },
   {
@@ -59,7 +59,7 @@ let userData = [
     email: "vulengocvip215@gmail.com",
     permission: "user",
     order: [],
-    wishList: [],
+    cart: [],
     status: "inactive",
   },
   {
@@ -70,7 +70,7 @@ let userData = [
     email: "vulengocvip015@gmail.com",
     permission: "user",
     order: [],
-    wishList: [],
+    cart: [],
     status: "inactive",
   },
   {
@@ -81,7 +81,7 @@ let userData = [
     email: "ulengocvip2015@gmail.com",
     permission: "user",
     order: [],
-    wishList: [],
+    cart: [],
     status: "inactive",
   },
   {
@@ -92,7 +92,7 @@ let userData = [
     email: "vulengocvip5@gmail.com",
     permission: "user",
     order: [],
-    wishList: [],
+    cart: [],
     status: "inactive",
   },
 ];
@@ -100,32 +100,38 @@ let userData = [
 let categoryData = [
   {
     id: Math.floor(Math.random() * 1000000),
-    categoryName: "Computer & Laptop",
+    categoryImg:"",
+    ProductNumber:1,categoryName: "Computer & Laptop",
     status: "available",
   },
   {
     id: Math.floor(Math.random() * 1000000),
-    categoryName: "SmartPhone",
+    categoryImg:"",
+    ProductNumber:1,categoryName: "SmartPhone",
     status: "available",
   },
   {
     id: Math.floor(Math.random() * 1000000),
-    categoryName: "Headphones",
+    categoryImg:"",
+    ProductNumber:1,categoryName: "Headphones",
     status: "unavailable",
   },
   {
     id: Math.floor(Math.random() * 1000000),
-    categoryName: "Accessories",
+    categoryImg:"",
+    ProductNumber:1,categoryName: "Accessories",
     status: "unavailable",
   },
   {
     id: Math.floor(Math.random() * 1000000),
-    categoryName: "Camera & Photo",
+    categoryImg:"",
+    ProductNumber:1,categoryName: "Camera & Photo",
     status: "available",
   },
   {
     id: Math.floor(Math.random() * 1000000),
-    categoryName: "TV & Homes",
+    categoryImg:"",
+    ProductNumber:1,categoryName: "TV & Homes",
     status: "available",
   },
 ];

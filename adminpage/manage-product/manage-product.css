@@ -248,7 +248,6 @@ th {
   padding: 20px;
   border: 1px solid #ccc;
   z-index: 1000;
-  /* Đảm bảo form luôn nằm trên cùng */
 }
 
 table tbody tr:hover {
